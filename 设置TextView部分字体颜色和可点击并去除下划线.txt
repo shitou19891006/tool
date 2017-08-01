@@ -1,0 +1,19 @@
+//必须先写这个方法不然点击不会响应
+tvDesc.setMovementMethod(LinkMovementMethod.getInstance());
+                SpannableStringBuilder style = new SpannableStringBuilder(descs[i]);
+                style.setSpan(new ClickableSpan() {
+                    @Override
+                    public void onClick(View widget) {
+                       
+                    }
+
+                    @Override
+                    public void updateDrawState(TextPaint ds) {
+                        super.updateDrawState(ds);
+			//修改部分字体的颜色
+                        ds.setColor(getResources().getColor(R.color.color_08C2AD));
+			//去除部分字体的下划线
+                        ds.setUnderlineText(false);
+                    }
+                }, (descs[i].length() - 6), descs[i].length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);//当然这个2和6不用写死，根据实际需要来取值
+                tvDesc.setText(style);
