@@ -1,0 +1,24 @@
+1、Unable to create Debug Bridge: Unable to start adb server: 
+error: could not install *smartsocket* listener: cannot bind to 127.0.0.1:5037: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。 (10048)
+error: unknown host service
+could not read ok from ADB Server
+* failed to start daemon *
+error: cannot connect to daemon
+'D:\installed\Android\sdk\platform-tools\adb.exe,start-server' failed -- run manually if necessar
+解决办法：
+根据提示查看adb的端口号5037被谁占用
+通过 netstat -aon|findstr “5037” 找出相应的pid号，
+再通过任务管理器找到相应pid号的进程，然后将其结束，最后重启adb即可
+
+2、Unable to create Debug Bridge: Unable to start adb server: 'C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe,start-server'
+ failed -- run manually if necessary
+解决办法：
+根据提示查看adb的端口号5037被谁占用
+通过 netstat -aon|findstr “5037” 找出相应的pid号，
+再通过任务管理器找到相应pid号的进程，然后将其结束，最后重启adb即可
+
+3.Error:SDK location not found. 
+Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.
+解决方法：
+you have to just copy your local.properties file in the folder where project is stored and it will work like charm
+.But Remeber in the root folder where project is stored.
