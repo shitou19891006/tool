@@ -1,0 +1,40 @@
+命令行快捷键
+创建远程仓库
+首先要创建一个要在C盘的users下的Administrator下看有没有.ssh文件
+要是没有就创建一个.ssh文件 快捷键是 ssh-keygen -t rsa -C "邮箱"
+然后将.ssh 文件下的 id_rsa.pub文件里的密码拷贝到远程仓库的ssh密钥里
+cat id_rsa.pub 可以获取id_rsa.pub文件里面的内容
+
+在.ssh文件夹下的config文件里添加端口和主机地址
+vi config 打开config文件 然后要按i才能够进行编辑 vi是git默认的编辑器
+编辑好之后 要先按ESC键然后按shift+：就可以输入命令wq或者q!
+wq代表保存之后退出
+q!代表直接退出不保存
+
+①、ls 展示所有可见的文件
+ls -a展示所有可见和不可见的文件
+②、当安装好git之后就需要设置git的用户名和邮箱
+git config --global user.name "用户名"
+git config --global user.email "邮箱"
+③、显示所有的git中的config信息
+git config --list
+通过git config key来获取某个配置的信息
+例如 git config user.name
+④、git --help来获取指令的帮助
+⑤、git init在现有的目录下初始化仓库创建一个.git的子目录
+⑥、git add 文件名 用于将制定的文件增加到工作区
+⑦、git commit 将文件提交到暂存区
+⑧、git remote add origin git@host:用户名/仓库名 将本地仓库关联到远程仓库
+⑨、git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+以后就只需要执行 git push origin master
+⑩、mkdir 文件名 命令行创建一个文件夹
+    echo .....>文件名.文件类型    创建文件 ......是输入到文件中的内容
+    rm 文件名.文件类型            删除文件
+
+
+
+
+
+
+
+
