@@ -17,7 +17,7 @@ ls -a展示所有可见和不可见的文件
 git config --global user.name "用户名"
 git config --global user.email "邮箱"
 ③、显示所有的git中的config信息
-git config --list
+git config --listh 
 通过git config key来获取某个配置的信息
 例如 git config user.name
 ④、git --help来获取指令的帮助
@@ -27,15 +27,24 @@ git config --list
 ⑧、git remote add origin git@host:用户名/仓库名 将本地仓库关联到远程仓库
 ⑨、git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 以后就只需要执行 git push origin master
+
 ⑩、mkdir 文件名 命令行创建一个文件夹
     echo .....>文件名.文件类型    创建文件 ......是输入到文件中的内容
     rm 文件名.文件类型            删除文件
 git中从执行中退出有三种分别是quit、exit、ctrl+C
+
 （11）、git rm 文件   删除文件
         git mv 老的文件名 新的文件名  修改文件的名称
 
+(12)、git remote查看你已经配置的远程仓库服务器
+     git remote show [remote-name]   查看某一个远程仓库的更多信息
 
+（13）、git fetch 地址       从远程仓库里抓取数据
+        git fetch 替代名  地址  用替代名代替地址，以后就可以直接 git fetch 替代名
+ 
+（14）git remote rename 老远程仓库的名字 新远程仓库的名字  修改远程仓库的名字
+      git remote rm 远程仓库名字 移除远程仓库的名字
 
-
+（15）git branch 分支名 创建一个分支
 
 
