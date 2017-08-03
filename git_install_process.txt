@@ -11,24 +11,24 @@ vi config 打开config文件 然后要按i才能够进行编辑 vi是git默认的编辑器
 wq代表保存之后退出
 q!代表直接退出不保存
 
-①、ls 展示所有可见的文件
+（1）、ls 展示所有可见的文件
 ls -a展示所有可见和不可见的文件
-②、当安装好git之后就需要设置git的用户名和邮箱
+（2）、当安装好git之后就需要设置git的用户名和邮箱
 git config --global user.name "用户名"
 git config --global user.email "邮箱"
-③、显示所有的git中的config信息
+（3）、显示所有的git中的config信息
 git config --listh 
 通过git config key来获取某个配置的信息
 例如 git config user.name
-④、git --help来获取指令的帮助
-⑤、git init在现有的目录下初始化仓库创建一个.git的子目录
-⑥、git add 文件名 用于将制定的文件增加到工作区
-⑦、git commit 将文件提交到暂存区
-⑧、git remote add origin git@host:用户名/仓库名 将本地仓库关联到远程仓库
-⑨、git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+（4）、git --help来获取指令的帮助
+（5）、git init在现有的目录下初始化仓库创建一个.git的子目录
+（6）、git add 文件名 用于将制定的文件增加到工作区
+（7）、git commit 将文件提交到暂存区
+（8）、git remote add origin git@host:用户名/仓库名 将本地仓库关联到远程仓库
+（9）、git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 以后就只需要执行 git push origin master
 
-⑩、mkdir 文件名 命令行创建一个文件夹
+（10）、mkdir 文件名 命令行创建一个文件夹
     echo .....>文件名.文件类型    创建文件 ......是输入到文件中的内容
     rm 文件名.文件类型            删除文件
 git中从执行中退出有三种分别是quit、exit、ctrl+C
@@ -46,5 +46,8 @@ git中从执行中退出有三种分别是quit、exit、ctrl+C
       git remote rm 远程仓库名字 移除远程仓库的名字
 
 （15）git branch 分支名 创建一个分支
-
+      git checkout -b 分支名 创建一个分支并将地址切换到分支上 
+      git checkout 仓库名 切换到某一个仓库
+（16）git merger 被分支名 合并
+（17）git branch -d 分支名 删除的分支名
 
