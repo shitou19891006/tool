@@ -50,4 +50,5 @@ git中从执行中退出有三种分别是quit、exit、ctrl+C
       git checkout 仓库名 切换到某一个仓库
 （16）git merger 被分支名 合并
 （17）git branch -d 分支名 删除的分支名
+git push origin --delete 分支名 删除远程分支
 
