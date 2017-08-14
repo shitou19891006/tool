@@ -52,3 +52,10 @@ git中从执行中退出有三种分别是quit、exit、ctrl+C
 （17）git branch -d 分支名 删除的分支名
 git push origin --delete 分支名 删除远程分支
 
+(18)当执行git pull出现fatal: refusing to merge unrelated histories的错误的时候只要
+执行git pull origin branchname --allow-unrelated-histories就好了
+(19)从财付通拉取代码  git fetch em
+通常的一个合并过程执行的命令是
+比如merge我们7.0的代码，需要执行一下几步
+git fetch em
+git merge em/branch_7.0
