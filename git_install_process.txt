@@ -23,6 +23,7 @@ git config --listh
 （4）、git --help来获取指令的帮助
 （5）、git init在现有的目录下初始化仓库创建一个.git的子目录
 （6）、git add 文件名 用于将制定的文件增加到工作区
+       git add . 将所有的修改文件一次性上交上去
 （7）、git commit 将文件提交到暂存区
 （8）、git remote add origin git@host:用户名/仓库名 将本地仓库关联到远程仓库
 （9）、git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
