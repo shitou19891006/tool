@@ -55,7 +55,15 @@ git push origin --delete 分支名 删除远程分支
 
 (18)当执行git pull出现fatal: refusing to merge unrelated histories的错误的时候只要
 执行git pull origin branchname --allow-unrelated-histories就好了
-(19)从财付通拉取代码  git fetch em
+
+(19)当执行git commit -m ""时出现error: failed to push some refs to 'git@10.211.80.78:mobile_dev/ChoiceData_Wecha                                 t.git'
+hint: Updates were rejected because the tip of your current branch is behind
+则只要执行git push -u origin 分支-f   -f是强制提交上去
+
+（20）当执行git pull 的时候出现error: Your local changes to the following files would be overwritten by merge:时先将修改的内容提交到commit的
+
+
+(21)从财付通拉取代码  git fetch em
 通常的一个合并过程执行的命令是
 比如merge我们7.0的代码，需要执行一下几步
 git fetch em
