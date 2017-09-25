@@ -6,9 +6,9 @@ could not read ok from ADB Server
 error: cannot connect to daemon
 'D:\installed\Android\sdk\platform-tools\adb.exe,start-server' failed -- run manually if necessar
 解决办法：
-根据提示查看adb的端口号5037被谁占用
-通过 netstat -aon|findstr “5037” 找出相应的pid号，
-再通过任务管理器找到相应pid号的进程，然后将其结束，最后重启adb即可
+
+ netstat -aon|findstr “5037” 
+
 
 2、Unable to create Debug Bridge: Unable to start adb server: 'C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools\adb.exe,start-server'
  failed -- run manually if necessary
