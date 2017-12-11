@@ -1,7 +1,0 @@
-1、计算某一月份的最大天数  
-  
-Calendar time=Calendar.getInstance();   
-time.clear();   
-time.set(Calendar.YEAR,year);   
-time.set(Calendar.MONTH,i-1);//注意,Calendar对象默认一月为0               
-int day=time.getActualMaximum(Calendar.DAY_OF_MONTH);//本月份的天数 
